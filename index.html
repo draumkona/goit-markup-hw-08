@@ -4,68 +4,79 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
     <title>Studio</title>
   </head>
+
   <body>
     <header>
-      <a href="/W">WebStudio</a>
-      <nav>
-        <ul>
-          <li><a href="/A">Agencja</a></li>
-          <li><a href="/P">Portfolio</a></li>
-          <li><a href="/K">Kontakt</a></li>
-        </ul>
-      </nav>
-      <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a href="tel:+48111111111">+48 111 111 111</a>
-      <h1>Efektywne rozwiązania dla waszego biznesu</h1>
-      <button type="button">Zamów usługę</button>
+      <div class="menu">
+        <a class="logo1" href="index.html">
+          Web
+          <span class="logo2">Studio</span>
+        </a>
+
+        <nav class="menunav">
+          <ul class="main-links">
+            <li><a href="/A">Agencja</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="/K">Kontakt</a></li>
+          </ul>
+        </nav>
+
+        <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a class="phone" href="tel:+48111111111">+48 111 111 111</a>
+      </div>
+
+      <section class="main-header">
+        <h1 class="mh-text">Efektywne rozwiązania dla waszego biznesu</h1>
+        <button class="mh-button" type="button">Zamów usługę</button>
+      </section>
     </header>
 
     <main>
       <!--Nasze Atuty-->
-      <section>
+      <div class="atuty">
         <ul>
-          <li>
-            <h3>Lorem ipsum</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
-              excepturi et, corrupti omnis vel fuga consectetur delectus minus
-              similique, harum voluptas consequuntur adipisci asperiores
-              repellendus enim a. Eveniet, repellendus dolorem.
+          <li class="feature">
+            <h3 class="hfeat">Lorem ipsum</h3>
+            <p class="pfeat">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              dolorem repellat nostrum temporibus cumque officia quasi
+              architecto ea magnam?
             </p>
           </li>
-          <li>
-            <h3>Lorem ipsum</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
-              excepturi et, corrupti omnis vel fuga consectetur delectus minus
-              similique, harum voluptas consequuntur adipisci asperiores
-              repellendus enim a. Eveniet, repellendus dolorem.
+          <li class="feature">
+            <h3 class="hfeat">Lorem ipsum</h3>
+            <p class="pfeat">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id
+              aliquid quo odio itaque voluptatem corporis consequatur deserunt,
+              ut accusamus.
             </p>
           </li>
-          <li>
-            <h3>Lorem ipsum</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
-              excepturi et, corrupti omnis vel fuga consectetur delectus minus
-              similique, harum voluptas consequuntur adipisci asperiores
-              repellendus enim a. Eveniet, repellendus dolorem.
+          <li class="feature">
+            <h3 class="hfeat">Lorem ipsum</h3>
+            <p class="pfeat">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ut
+              facilis labore, provident quo aliquid et repudiandae odio
+              architecto?
             </p>
           </li>
-          <li>
-            <h3>Lorem ipsum</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
-              excepturi et, corrupti omnis vel fuga consectetur delectus minus
-              similique, harum voluptas consequuntur adipisci asperiores
-              repellendus enim a. Eveniet, repellendus dolorem.
+          <li class="feature">
+            <h3 class="hfeat">Lorem ipsum</h3>
+            <p class="pfeat">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sequi
+              est laboriosam quas, ullam eos odit reiciendis animi dolores.
             </p>
           </li>
         </ul>
-      </section>
+      </div>
 
-      <section>
+      <section class="box1">
         <h2>Czym się zajmujemy</h2>
         <ul>
           <li>
@@ -90,7 +101,7 @@
         </ul>
       </section>
 
-      <section>
+      <section class="box2">
         <h2>Nasz zespół</h2>
         <ul>
           <li>
@@ -129,11 +140,16 @@
       </section>
     </main>
 
-    <footer>
-      <a href="/W">WebStudio</a>
-      <address>m. Warszawa, Aleje Jerozolimskie 21</address>
-      <a href="mailto:info@example.com">info@example.com</a>
-      <a href="tel:+48111111111">+48 111 111 111</a>
+    <footer class="bottom">
+      <a class="logo1" href="index.html">
+        Web
+        <span class="logo3">Studio</span>
+      </a>
+      <div class="box3">
+        <address class="adtext">m. Warszawa, Aleje Jerozolimskie 21</address>
+        <a class="mail2" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a class="phone2" href="tel:+48111111111">+48 111 111 111</a>
+      </div>
     </footer>
   </body>
 </html>
