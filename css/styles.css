@@ -50,12 +50,10 @@ body {
 .menunav {
     width: 254px;
     height: 16px;
-    display: inline-block;
 }
 
 .main-links li {
     list-style: none;
-    display: inline-block;
     filter: drop-shadow(0px 4px 4px var(--box-shadow)) drop-shadow(0px 4px 4px var(--box-shadow));
 }
 
@@ -136,7 +134,6 @@ body {
     width: 270px;
     height: 101px;
     list-style: none;
-    display: inline-block;
 }
 
 .hfeat {
@@ -171,7 +168,6 @@ body {
 
 .box1 li, .box2 li {
     list-style: none;
-    display: inline-block;
 }
 
 .box2 {
@@ -214,7 +210,6 @@ body {
     letter-spacing: 0.03em;
     line-height: 1.7;
     color: var(--color2);
-    display: inline-block;
 }
 
 .mail2:focus, .mail2:hover,
@@ -232,7 +227,6 @@ body {
 
 .btnlist li {
     list-style: none;
-    display: inline-block;
 }
 
 .filterbtn {
@@ -281,5 +275,4 @@ body {
 /* projects */
 .projects li {
     list-style: none;
-    display: inline-block;
 }
