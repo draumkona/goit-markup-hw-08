@@ -10,18 +10,20 @@
     --box-bck-color: #F5F4FA;
     --color1: #eee;
     --color2: rgba(255, 255, 255, 0.6);
+    --box-shadow: rgba(0, 0, 0, 0.25);
+    --box-shadow2: rgba(0, 0, 0, 0.15);
 }
 
 body {
     background-color: var(--global-bck-color);
     font-family: 'Roboto', sans-serif;
     color: var(--global-txt);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px var(--box-shadow);
     width: 1600px;
 }
 
 /* index */
-
+/* header */
 .menu {
     width: 1600px;
     height: 80px;
@@ -33,8 +35,8 @@ body {
     font-weight: 700;
     font-size: 26px;
     text-decoration: none;
-    color: var(--special);
     letter-spacing: 0.035em;
+    color: var(--special);
 }
 
 .logo2 {
@@ -54,6 +56,7 @@ body {
 .main-links li {
     list-style: none;
     display: inline-block;
+    filter: drop-shadow(0px 4px 4px var(--box-shadow)) drop-shadow(0px 4px 4px var(--box-shadow));
 }
 
 .main-links a {
@@ -69,22 +72,21 @@ body {
     color: var(--special);
 }
 
-.mail {
-    width: 135px;
-    height: 16px;
+.topmedia {
     color: var(--global-txt);
     font-weight: 500;
     letter-spacing: 0.02em;
     font-size: 14px;
 }
 
+.mail {
+    width: 135px;
+    height: 16px;
+}
+
 .phone {
     width: 110px;
     height: 16px;
-    color: var(--global-txt);
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.02em;
 }
 
 .phone:focus, .phone:hover,
@@ -105,6 +107,7 @@ body {
     font-size: 44px;
     letter-spacing: 0.06em;
     line-height: 1.4;
+    width: 696px;
 }
 
 .mh-button {
@@ -114,14 +117,16 @@ body {
     width: 200px;
     height: 50px;
     border-radius: 4px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px var(--box-shadow2);
     font-size: 16px;
     letter-spacing: 0.06em;
     line-height: 1.9;
     border: none;
     font-family: inherit;
+    cursor: pointer;
 }
 
+/* main */
 .atuty {
     width: 1170px;
     height: 101px;
@@ -180,6 +185,7 @@ body {
     height: 368px;
 }
 
+/* footer */
 .bottom {
     width: 1600px;
     height: 252px;
@@ -211,8 +217,13 @@ body {
     display: inline-block;
 }
 
-/* Portfolio */
+.mail2:focus, .mail2:hover,
+.phone2:focus, .phone2:hover {
+    color: var(--special);
+}
 
+/* Portfolio */
+/* buttons */
 .btnlist {
     width: 572px;
     height: 54px;
@@ -233,6 +244,7 @@ body {
     font-weight: 500;
     font-family: inherit;
     text-align: center;
+    cursor: pointer;
 }
 
 .filterbtn:focus, .filterbtn:hover {
@@ -265,6 +277,7 @@ body {
     height: 38px;
 }
 
+/* projects */
 .projects li {
     list-style: none;
     display: inline-block;
