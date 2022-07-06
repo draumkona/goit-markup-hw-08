@@ -30,11 +30,10 @@ body {
 /* header */
 .menu {
     width: 1600px;
-    height: 80px;
     border: solid 1px var(--border-top);
 }
 
-.logo1 {
+.header-logo-word1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -43,17 +42,16 @@ body {
     color: var(--special);
 }
 
-.logo2 {
+.header-logo-word2 {
     color: var(--boring-black);
 }
 
-.logo3 {
+.footer-logo-word2 {
     color: var(--global-bck-color);
 }
 
 .menunav {
     width: 254px;
-    height: 16px;
 }
 
 .main-links li {
@@ -129,14 +127,12 @@ body {
 }
 
 /* main */
-.atuty {
+.team-strengths {
     width: 1170px;
-    height: 101px;
 }
 
 .feature {
     width: 270px;
-    height: 101px;
     list-style: none;
 }
 
@@ -151,18 +147,16 @@ body {
 
 .pfeat {
     width: 270px;
-    height: 75px;
     font-size: 14px;
     letter-spacing: 0.03em;
     line-height: 1.7;
 }
 
-.box1 {
+.about-work {
     width: 1170px;
-    height: 386px;
 }
 
-.box1 h2, .box2 h2 {
+.about-work h2, .our-team h2 {
     color:var(--normal-links);
     letter-spacing: 0.03em;
     font-weight: 700;
@@ -170,29 +164,25 @@ body {
     text-align: center;
 }
 
-.box1 li, .box2 li {
+.about-work li, .our-team li {
     list-style: none;
 }
 
-.box2 {
+.our-team {
     width: 1600px;
-    height: 648px;
     background-color: var(--box-bck-color);
 }
 
-.box2 ul {
+.our-team ul {
     width: 1170px;
-    height: 368px;
 }
 
 .team {
     width: 1170px;
-    height: 368px;
 }
 
 .team-card {
     width: 270px;
-    height: 368px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px var(--box-shadow3), 0px 1px 1px var(--box-shadow4), 0px 2px 1px var(--box-shadow5);
     background-color: var(--global-bck-color);
@@ -220,14 +210,12 @@ body {
     background-color: var(--mh-color);
 }
 
-.box3 {
+.contacts {
     width: 246px;
-    height: 81px;
 }
 
 .adtext {
     width: 246px;
-    height: 21px;
     font-size: 14px;
     letter-spacing: 0.03em;
     line-height: 1.7;
@@ -237,7 +225,6 @@ body {
 
 .mail2, .phone2 {
     width: 231px;
-    height: 21px;
     font-size: 14px;
     letter-spacing: 0.03em;
     line-height: 1.7;
@@ -254,7 +241,6 @@ body {
 /* buttons */
 .btnlist {
     width: 572px;
-    height: 54px;
 }
 
 .btnlist li {
@@ -307,20 +293,18 @@ body {
 /* projects */
 .projects {
     width: 1170px;
-    height: 1360px;
 }
 
 .projects li {
     list-style: none;
 }
 
-.boxes {
+.project-card {
     width: 370px;
-    height: 404px;
     border: solid 1px var(--color1);
 }
 
-.hboxes {
+.hproject-card {
     width: 322px;
     color: var(--normal-links);
     line-height: 2;
@@ -329,7 +313,7 @@ body {
     letter-spacing: 0.06em;
 }
 
-.pboxes {
+.pproject-card {
     width: 322px;
     color: var(--global-txt);
     line-height: 1.9;
