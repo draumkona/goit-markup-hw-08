@@ -5,173 +5,211 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-normalize@1.1.0/modern-normalize.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link href="css/styles.css" rel="stylesheet" />
     <title>Studio</title>
   </head>
+
   <body>
     <header>
-      <div class="menu">
-        <a class="header-logo-word1" href="index.html">
-          Web<span class="header-logo-word2">Studio</span>
-        </a>
+      <div class="container">
+        <div class="menu">
+          <div class="headerlogo">
+            <a class="header-logo-word1" href="index.html">
+              Web<span class="header-logo-word2">Studio</span>
+            </a>
+          </div>
 
-        <nav class="menunav">
-          <ul class="main-links">
-            <li><a href="/A">Agencja</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="/K">Kontakt</a></li>
-          </ul>
-        </nav>
+          <nav class="menunav">
+            <ul class="main-links">
+              <li><a href="/A">Agencja</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="/K">Kontakt</a></li>
+            </ul>
+          </nav>
 
-        <a class="mail topmedia" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        >
-        <a class="phone topmedia" href="tel:+48111111111">+48 111 111 111</a>
+          <div class="contact">
+            <a class="mail topmedia" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+            <a class="phone topmedia" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
+          </div>
+        </div>
+
+        <section class="main-header">
+          <h1 class="mh-text">Efektywne rozwiązania dla waszego biznesu</h1>
+          <button class="mh-button" type="button">Zamów usługę</button>
+        </section>
       </div>
-
-      <section class="main-header">
-        <h1 class="mh-text">Efektywne rozwiązania dla waszego biznesu</h1>
-        <button class="mh-button" type="button">Zamów usługę</button>
-      </section>
     </header>
 
     <main>
       <!--Nasze Atuty-->
-      <div class="team-strengths">
-        <ul>
-          <li class="feature">
-            <h3 class="hfeat">Lorem ipsum</h3>
-            <p class="pfeat">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-              dolorem repellat nostrum temporibus cumque officia quasi
-              architecto ea magnam?
-            </p>
-          </li>
-          <li class="feature">
-            <h3 class="hfeat">Lorem ipsum</h3>
-            <p class="pfeat">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id
-              aliquid quo odio itaque voluptatem corporis consequatur deserunt,
-              ut accusamus.
-            </p>
-          </li>
-          <li class="feature">
-            <h3 class="hfeat">Lorem ipsum</h3>
-            <p class="pfeat">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ut
-              facilis labore, provident quo aliquid et repudiandae odio
-              architecto?
-            </p>
-          </li>
-          <li class="feature">
-            <h3 class="hfeat">Lorem ipsum</h3>
-            <p class="pfeat">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sequi
-              est laboriosam quas, ullam eos odit reiciendis animi dolores.
-            </p>
-          </li>
-        </ul>
-      </div>
-
-      <section class="about-work">
-        <h2>Czym się zajmujemy</h2>
-        <ul>
-          <li>
-            <img
-              src="images/b1.jpg"
-              alt="tworzenie aplikacji"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li>
-            <img src="images/b2.jpg" alt="UI design" width="370" height="294" />
-          </li>
-          <li>
-            <img
-              src="images/b3.jpg"
-              alt="dbałość o szczegóły"
-              width="370"
-              height="294"
-            />
-          </li>
-        </ul>
+      <section class="section">
+        <div class="container">
+          <div class="team-strengths">
+            <ul class="team-features">
+              <li class="feature">
+                <h3 class="hfeat">Lorem ipsum</h3>
+                <p class="pfeat">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                  dolorem repellat nostrum temporibus cumque officia quasi
+                  architecto ea magnam?
+                </p>
+              </li>
+              <li class="feature">
+                <h3 class="hfeat">Lorem ipsum</h3>
+                <p class="pfeat">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id
+                  aliquid quo odio itaque voluptatem corporis consequatur
+                  deserunt, ut accusamus.
+                </p>
+              </li>
+              <li class="feature">
+                <h3 class="hfeat">Lorem ipsum</h3>
+                <p class="pfeat">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                  ut facilis labore, provident quo aliquid et repudiandae odio
+                  architecto?
+                </p>
+              </li>
+              <li class="feature">
+                <h3 class="hfeat">Lorem ipsum</h3>
+                <p class="pfeat">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                  sequi est laboriosam quas, ullam eos odit reiciendis animi
+                  dolores.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
-      <section class="our-team">
-        <h2>Nasz zespół</h2>
-        <ul class="team">
-          <li>
-            <figure class="team-card">
-              <img
-                src="images/card1.jpg"
-                alt="product designer"
-                width="270"
-                height="260"
-              />
-              <figcaption>
-                <h3 class="hcard">John Doe</h3>
-                <p class="pcard">Product Designer</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="team-card">
-              <img
-                src="images/card2.jpg"
-                alt="frontend developer"
-                width="270"
-                height="260"
-              />
-              <figcaption>
-                <h3 class="hcard">John Doe</h3>
-                <p class="pcard">Product Designer</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="team-card">
-              <img
-                src="images/card3.jpg"
-                alt="marketing"
-                width="270"
-                height="260"
-              />
-              <figcaption>
-                <h3 class="hcard">John Doe</h3>
-                <p class="pcard">Product Designer</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="team-card">
-              <img
-                src="images/card4.jpg"
-                alt="ui designer"
-                width="270"
-                height="260"
-              />
-              <figcaption>
-                <h3 class="hcard">John Doe</h3>
-                <p class="pcard">Product Designer</p>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
+      <section class="section">
+        <div class="container">
+          <section class="about-work">
+            <h2>Czym się zajmujemy</h2>
+            <ul class="our-work">
+              <li>
+                <img
+                  src="images/b1.jpg"
+                  alt="tworzenie aplikacji"
+                  width="370"
+                  height="294"
+                />
+              </li>
+              <li>
+                <img
+                  src="images/b2.jpg"
+                  alt="UI design"
+                  width="370"
+                  height="294"
+                />
+              </li>
+              <li>
+                <img
+                  src="images/b3.jpg"
+                  alt="dbałość o szczegóły"
+                  width="370"
+                  height="294"
+                />
+              </li>
+            </ul>
+          </section>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <section class="our-team">
+            <h2>Nasz zespół</h2>
+            <ul class="team">
+              <li>
+                <figure class="team-card">
+                  <img
+                    src="images/card1.jpg"
+                    alt="product designer"
+                    width="270"
+                    height="260"
+                  />
+                  <figcaption>
+                    <h3 class="hcard">John Doe</h3>
+                    <p class="pcard">Product Designer</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="team-card">
+                  <img
+                    src="images/card2.jpg"
+                    alt="frontend developer"
+                    width="270"
+                    height="260"
+                  />
+                  <figcaption>
+                    <h3 class="hcard">John Doe</h3>
+                    <p class="pcard">Product Designer</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="team-card">
+                  <img
+                    src="images/card3.jpg"
+                    alt="marketing"
+                    width="270"
+                    height="260"
+                  />
+                  <figcaption>
+                    <h3 class="hcard">John Doe</h3>
+                    <p class="pcard">Product Designer</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="team-card">
+                  <img
+                    src="images/card4.jpg"
+                    alt="ui designer"
+                    width="270"
+                    height="260"
+                  />
+                  <figcaption>
+                    <h3 class="hcard">John Doe</h3>
+                    <p class="pcard">Product Designer</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </section>
+        </div>
       </section>
     </main>
 
     <footer class="bottom">
-      <a class="header-logo-word1" href="index.html">
-        Web<span class="footer-logo-word2">Studio</span>
-      </a>
-      <div class="contacts">
-        <address class="adtext">m. Warszawa, Aleje Jerozolimskie 21</address>
-        <a class="mail2" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a class="phone2" href="tel:+48111111111">+48 111 111 111</a>
+      <div class="container">
+        <div class="footerlogo">
+          <a class="header-logo-word1" href="index.html">
+            Web<span class="footer-logo-word2">Studio</span>
+          </a>
+        </div>
+
+        <div class="contacts">
+          <address class="adtext">m. Warszawa, Aleje Jerozolimskie 21</address>
+          <a class="mail2" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+          <a class="phone2" href="tel:+48111111111">+48 111 111 111</a>
+        </div>
       </div>
     </footer>
   </body>

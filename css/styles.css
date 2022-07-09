@@ -23,14 +23,33 @@ body {
     color: var(--global-txt);
     box-shadow: 0px 4px 4px var(--box-shadow);
     width: 1600px;
+    margin: auto;
 }
 
 /* index */
+
+.container {
+    width: 1200px;
+}
+
+.section {
+    padding-top: 94px;
+}
 
 /* header */
 .menu {
     width: 1600px;
     border: solid 1px var(--border-top);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 215px;
+    border-bottom: 1px solid var(#ECECEC);
+}
+
+.headerlogo {
+    margin-top: 24px;
+    margin-bottom: 25px;
 }
 
 .header-logo-word1 {
@@ -52,6 +71,12 @@ body {
 
 .menunav {
     width: 254px;
+    padding-left: 92px;
+}
+
+.main-links {
+    display: flex;
+    gap: 46px;
 }
 
 .main-links li {
@@ -79,6 +104,12 @@ body {
     font-size: 14px;
 }
 
+.contact {
+    padding-left: 371px;
+    gap: 50px;
+    display: flex;
+}
+
 .mail {
     width: 135px;
     height: 16px;
@@ -89,8 +120,10 @@ body {
     height: 16px;
 }
 
-.phone:focus, .phone:hover,
-.mail:focus, .mail:hover {
+.phone:focus,
+.phone:hover,
+.mail:focus,
+.mail:hover {
     color: var(--special);
 }
 
@@ -98,6 +131,8 @@ body {
     background-color: var(--mh-color);
     width: 1600px;
     height: 600px;
+    padding: 200px 452px 280px 452px;
+    text-align: center;
 }
 
 .mh-text {
@@ -108,6 +143,11 @@ body {
     letter-spacing: 0.06em;
     line-height: 1.4;
     width: 696px;
+    padding-bottom: 30px;
+}
+
+h1 {
+    margin: 0;
 }
 
 .mh-button {
@@ -129,6 +169,12 @@ body {
 /* main */
 .team-strengths {
     width: 1170px;
+    padding: 0 215px;
+}
+
+.team-features {
+    display: flex;
+    gap: 30px;
 }
 
 .feature {
@@ -156,21 +202,33 @@ body {
     width: 1170px;
 }
 
-.about-work h2, .our-team h2 {
-    color:var(--normal-links);
+.our-work {
+    display: flex;
+    gap: 30px;
+    padding: 0 215px;
+    margin: 0;
+}
+
+.our-team h2,
+.about-work h2 {
+    color: var(--normal-links);
     letter-spacing: 0.03em;
     font-weight: 700;
     font-size: 36px;
+    margin: 0;
     text-align: center;
+    padding-bottom: 50px;
 }
 
-.about-work li, .our-team li {
+.about-work li,
+.our-team li {
     list-style: none;
 }
 
 .our-team {
     width: 1600px;
     background-color: var(--box-bck-color);
+    padding: 94px 215px 94px 215px;
 }
 
 .our-team ul {
@@ -179,6 +237,9 @@ body {
 
 .team {
     width: 1170px;
+    display: flex;
+    gap: 30px;
+    padding: 0;
 }
 
 .team-card {
@@ -186,6 +247,7 @@ body {
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px var(--box-shadow3), 0px 1px 1px var(--box-shadow4), 0px 2px 1px var(--box-shadow5);
     background-color: var(--global-bck-color);
+    margin: 0;
 }
 
 .hcard {
@@ -201,6 +263,7 @@ body {
     font-size: 16px;
     letter-spacing: 0.03em;
     text-align: center;
+    padding-bottom: 30px;
 }
 
 /* footer */
@@ -210,8 +273,14 @@ body {
     background-color: var(--mh-color);
 }
 
+.footerlogo {
+    padding-top: 60px;
+    padding-left: 215px;
+}
+
 .contacts {
-    width: 246px;
+    padding-left: 215px;
+    padding-top: 20px;
 }
 
 .adtext {
@@ -223,16 +292,21 @@ body {
     font-style: normal;
 }
 
-.mail2, .phone2 {
+.mail2,
+.phone2 {
     width: 231px;
     font-size: 14px;
     letter-spacing: 0.03em;
     line-height: 1.7;
     color: var(--color2);
+    padding-top: 9px;
+    display: block;
 }
 
-.mail2:focus, .mail2:hover,
-.phone2:focus, .phone2:hover {
+.mail2:focus,
+.mail2:hover,
+.phone2:focus,
+.phone2:hover {
     color: var(--special);
 }
 
@@ -240,7 +314,7 @@ body {
 
 /* buttons */
 .btnlist {
-    width: 572px;
+    display: inline-block;
 }
 
 .btnlist li {
@@ -260,7 +334,8 @@ body {
     cursor: pointer;
 }
 
-.filterbtn:focus, .filterbtn:hover {
+.filterbtn:focus,
+.filterbtn:hover {
     background-color: var(--special);
     color: var(--global-bck-color);
 }
