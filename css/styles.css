@@ -26,24 +26,34 @@ body {
     margin: auto;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /* index */
 
 .container {
     width: 1200px;
+    margin: auto;
 }
 
 .section {
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 /* header */
+
 .menu {
     width: 1600px;
     border: solid 1px var(--border-top);
+}
+
+.headermenu {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 215px;
     border-bottom: 1px solid var(#ECECEC);
 }
 
@@ -169,7 +179,6 @@ h1 {
 /* main */
 .team-strengths {
     width: 1170px;
-    padding: 0 215px;
 }
 
 .team-features {
@@ -205,8 +214,6 @@ h1 {
 .our-work {
     display: flex;
     gap: 30px;
-    padding: 0 215px;
-    margin: 0;
 }
 
 .our-team h2,
@@ -225,21 +232,14 @@ h1 {
     list-style: none;
 }
 
-.our-team {
-    width: 1600px;
+.team-bckgrnd {
     background-color: var(--box-bck-color);
-    padding: 94px 215px 94px 215px;
-}
-
-.our-team ul {
-    width: 1170px;
 }
 
 .team {
     width: 1170px;
     display: flex;
     gap: 30px;
-    padding: 0;
 }
 
 .team-card {
@@ -256,6 +256,7 @@ h1 {
     letter-spacing: 0.03em;
     font-weight: medium;
     text-align: center;
+    padding: 30px 99px 10px 99px;
 }
 
 .pcard {
@@ -275,11 +276,9 @@ h1 {
 
 .footerlogo {
     padding-top: 60px;
-    padding-left: 215px;
 }
 
 .contacts {
-    padding-left: 215px;
     padding-top: 20px;
 }
 
@@ -314,7 +313,10 @@ h1 {
 
 /* buttons */
 .btnlist {
-    display: inline-block;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    padding-top: 94px;
 }
 
 .btnlist li {
@@ -366,32 +368,42 @@ h1 {
 }
 
 /* projects */
-.projects {
-    width: 1170px;
-}
 
-.projects li {
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     list-style: none;
-}
+    padding-top: 34px;
+    padding-bottom: 94px;
+    justify-content: center;
 
-.project-card {
-    width: 370px;
-    border: solid 1px var(--color1);
 }
 
 .hproject-card {
-    width: 322px;
     color: var(--normal-links);
     line-height: 2;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.06em;
+    padding-left: 24px;
+    padding-top: 20px;
 }
 
 .pproject-card {
-    width: 322px;
     color: var(--global-txt);
     line-height: 1.9;
     letter-spacing: 0.03em;
     font-size: 16px;
+    padding-left: 24px;
+    padding-top: 4px;
+    padding-bottom: 20px;
+}
+
+.projects-list li figure figcaption {
+    border: solid 1px var(--color1);
+}
+
+img {
+    display: block;
 }
