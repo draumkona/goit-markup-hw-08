@@ -316,7 +316,6 @@ h1 {
     display: flex;
     gap: 8px;
     justify-content: center;
-    padding-top: 94px;
 }
 
 .btnlist li {
@@ -375,7 +374,6 @@ h1 {
     gap: 30px;
     list-style: none;
     padding-top: 34px;
-    padding-bottom: 94px;
     justify-content: center;
 
 }
