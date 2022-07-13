@@ -22,7 +22,6 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--global-txt);
     box-shadow: 0px 4px 4px var(--box-shadow);
-    width: 1600px;
     margin: auto;
 }
 
@@ -46,7 +45,7 @@ body {
 /* header */
 
 .menu {
-    width: 1600px;
+
     border: solid 1px var(--border-top);
 }
 
@@ -139,21 +138,22 @@ body {
 
 .main-header {
     background-color: var(--mh-color);
-    width: 1600px;
-    height: 600px;
-    padding: 200px 452px 280px 452px;
     text-align: center;
+}
+
+.main-header .container {
+    padding: 200px 252px 200px 252px;
 }
 
 .mh-text {
     color: var(--normal-txt);
     text-transform: uppercase;
-    text-align: center;
     font-size: 44px;
     letter-spacing: 0.06em;
     line-height: 1.4;
-    width: 696px;
+    max-width: 696px;
     padding-bottom: 30px;
+    text-align: center;
 }
 
 h1 {
@@ -174,6 +174,7 @@ h1 {
     border: none;
     font-family: inherit;
     cursor: pointer;
+
 }
 
 /* main */
@@ -232,7 +233,7 @@ h1 {
     list-style: none;
 }
 
-.team-bckgrnd {
+.team-bck {
     background-color: var(--box-bck-color);
 }
 
@@ -269,7 +270,7 @@ h1 {
 
 /* footer */
 .bottom {
-    width: 1600px;
+
     height: 252px;
     background-color: var(--mh-color);
 }
