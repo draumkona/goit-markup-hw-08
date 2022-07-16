@@ -15,6 +15,13 @@
     --box-shadow3: rgba(0, 0, 0, 0.12);
     --box-shadow4: rgba(0, 0, 0, 0.14);
     --box-shadow5: rgba(0, 0, 0, 0.2);
+    --box-shadow6: rgba(0, 0, 0, 0.06);
+    --box-shadow7: rgba(0, 0, 0, 0.16);
+    --box-shadow8: rgba(0, 0, 0, 0.1);
+    --box-shadow9: rgba(0, 0, 0, 0.08);
+    --picture-shadow: rgba(47, 48, 58, 0.4);
+    --icons-color: #AFB1B8;
+    --icons-bck: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -45,7 +52,6 @@ body {
 /* header */
 
 .menu {
-
     border: solid 1px var(--border-top);
 }
 
@@ -53,7 +59,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid var(#ECECEC);
+    border-bottom: 1px solid var(--border-top);
 }
 
 .headerlogo {
@@ -111,12 +117,14 @@ body {
     font-weight: 500;
     letter-spacing: 0.02em;
     font-size: 14px;
+    text-decoration: none;
 }
 
 .contact {
     padding-left: 371px;
     gap: 50px;
     display: flex;
+    list-style: none;
 }
 
 .mail {
@@ -143,6 +151,13 @@ body {
 
 .main-header .container {
     padding: 200px 252px 200px 252px;
+}
+
+.header-foto {
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.0), rgba(47, 48, 58, 0.1), rgba(47, 48, 58, 0.2), rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.4)), url(/images/team.jpg);
+    background-repeat: no-repeat;
+    background-size: 1600px;
+    background-position: center;
 }
 
 .mh-text {
@@ -178,9 +193,7 @@ h1 {
 }
 
 /* main */
-.team-strengths {
-    width: 1170px;
-}
+
 
 .team-features {
     display: flex;
@@ -192,8 +205,20 @@ h1 {
     list-style: none;
 }
 
-.hfeat {
+.pic-feature {
     width: 270px;
+    height: 120px;
+    background-color: var(--box-bck-color);
+    padding: 25px 100px 25px 100px;
+}
+
+.text-feat {
+    padding-top: 30px;
+    width: 270px;
+}
+
+.hfeat {
+    
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
@@ -202,7 +227,7 @@ h1 {
 }
 
 .pfeat {
-    width: 270px;
+    
     font-size: 14px;
     letter-spacing: 0.03em;
     line-height: 1.7;
@@ -265,18 +290,71 @@ h1 {
     font-size: 16px;
     letter-spacing: 0.03em;
     text-align: center;
+    padding-bottom: 16px;
+}
+
+.social-links-team {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 30px;
 }
 
-/* footer */
-.bottom {
-
-    height: 252px;
-    background-color: var(--mh-color);
+.icons {
+    display: block;
+    border-radius: 50%;
+    padding: 12px 12px 8px 12px;
+    background-color: var(--global-bck-color);
+    fill: var(--icons-color);
 }
 
-.footerlogo {
+.icons:hover {
+    background-color: var(--special);
+    fill: var(--global-bck-color);
+}
+
+.social-pic {
+    color: var(--icons-color);
+}
+
+.our-clients {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-icon {
+    display: flex;
+    border: 1px solid var(--icons-color);
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    fill: var(--icons-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.client-icon:hover {
+    border: 1px solid var(--special);
+    fill: var(--special);
+}
+
+
+/* footer */
+.bottom {
+    height: 252px;
+    background-color: var(--mh-color);
     padding-top: 60px;
+}
+
+.bottom-media {
+    list-style: none;
+    display: flex;
+    gap: 70px;
 }
 
 .contacts {
@@ -301,6 +379,7 @@ h1 {
     color: var(--color2);
     padding-top: 9px;
     display: block;
+    text-decoration: none;
 }
 
 .mail2:focus,
@@ -309,6 +388,37 @@ h1 {
 .phone2:hover {
     color: var(--special);
 }
+
+.socials-bottom {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--global-bck-color);
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.icon-list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.icons-bottom {
+    display: block;
+    border-radius: 50%;
+    padding: 12px 12px 8px 12px;
+    background-color: var(--icons-bck);
+    fill: var(--global-bck-color);
+}
+
+.icons-bottom:hover {
+    background-color: var(--special);
+}
+
 
 /* Portfolio */
 
@@ -340,6 +450,7 @@ h1 {
 .filterbtn:hover {
     background-color: var(--special);
     color: var(--global-bck-color);
+    box-shadow: 0px 3px 1px  var(--box-shadow8), 0px 1px 2px var(--box-shadow9), 0px 2px 2px var(--box-shadow3);
 }
 
 .one {
@@ -403,6 +514,23 @@ h1 {
     border: solid 1px var(--color1);
 }
 
+.projects-list li:hover {
+    box-shadow: 0px 1px 1px var(--box-shadow3), 0px 4px 4px var(--box-shadow6), 1px 4px 6px var(--box-shadow7);
+}
+
 img {
     display: block;
+}
+
+/* ikony */
+
+.icon-top {
+    stroke: currentColor;
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.icon-feature {
+    stroke: currentColor;
+    fill: currentColor;
 }
