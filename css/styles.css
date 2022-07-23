@@ -3,6 +3,7 @@
     --mh-color: #2F303A;
     --normal-txt: #fff;
     --special: #2196F3;
+    --special-overlay: rgba(33, 150, 243, 0.9);
     --normal-links: #212121;
     --boring-black: #000;
     --border-top: #ECECEC;
@@ -22,6 +23,7 @@
     --picture-shadow: rgba(47, 48, 58, 0.4);
     --icons-color: #AFB1B8;
     --icons-bck: rgba(255, 255, 255, 0.1);
+    --work-bck: rgba(47, 48, 58, 0.8);
 }
 
 body {
@@ -86,7 +88,7 @@ body {
 
 .menunav {
     width: 254px;
-    padding-left: 92px;
+    margin-left: 92px;
 }
 
 .main-links {
@@ -96,15 +98,30 @@ body {
 
 .main-links li {
     list-style: none;
-    filter: drop-shadow(0px 4px 4px var(--box-shadow)) drop-shadow(0px 4px 4px var(--box-shadow));
+    
 }
 
-.main-links a {
+.active::after {
+    content: "";
+    background: var(--special);
+    width: 53px;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 45px;
+    position: absolute;
+    border-radius: 2px;
+}
+
+.link-head {
     color: var(--normal-links);
     font-weight: 700;
     text-decoration: none;
     font-size: 14px;
     letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
 }
 
 .main-links a:focus,
@@ -121,7 +138,7 @@ body {
 }
 
 .contact {
-    padding-left: 371px;
+    padding-left: 345px;
     gap: 50px;
     display: flex;
     list-style: none;
@@ -130,11 +147,13 @@ body {
 .mail {
     width: 135px;
     height: 16px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .phone {
     width: 110px;
     height: 16px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .phone:focus,
@@ -258,6 +277,24 @@ h1 {
     list-style: none;
 }
 
+.work-label {
+    position: relative;
+}
+
+.label {
+    position: absolute;
+    background-color: var(--work-bck);
+    text-transform: uppercase;
+    color: var(--global-bck-color);
+    bottom: 0;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    width: 370px;
+    padding: 27px 0;
+}
+
 .team-bck {
     background-color: var(--box-bck-color);
 }
@@ -308,6 +345,8 @@ h1 {
     padding: 12px 12px 8px 12px;
     background-color: var(--global-bck-color);
     fill: var(--icons-color);
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icons:hover {
@@ -336,6 +375,8 @@ h1 {
     fill: var(--icons-color);
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-icon:hover {
@@ -380,6 +421,7 @@ h1 {
     padding-top: 9px;
     display: block;
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail2:focus,
@@ -413,6 +455,8 @@ h1 {
     padding: 12px 12px 8px 12px;
     background-color: var(--icons-bck);
     fill: var(--global-bck-color);
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icons-bottom:hover {
@@ -444,6 +488,7 @@ h1 {
     font-family: inherit;
     text-align: center;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filterbtn:focus,
@@ -514,12 +559,46 @@ h1 {
     border: solid 1px var(--color1);
 }
 
+.projects-list li {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .projects-list li:hover {
     box-shadow: 0px 1px 1px var(--box-shadow3), 0px 4px 4px var(--box-shadow6), 1px 4px 6px var(--box-shadow7);
 }
 
 img {
     display: block;
+}
+
+.project-card:hover .card-overlay {
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(-295px);
+}
+
+.card-overlay {
+    background-color: var(--special-overlay);
+    position: absolute;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-overlay p {
+    color: var(--global-bck-color);
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    padding: 49px 45px 49px 24px;
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card figcaption {
+    position: relative;
+    background-color: var(--global-bck-color);
 }
 
 /* ikony */
@@ -533,4 +612,48 @@ img {
 .icon-feature {
     stroke: currentColor;
     fill: currentColor;
+}
+
+/* okno modalne */
+
+.backdrop {
+    background-color: var(--box-shadow5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: no-drop;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    min-height: 581px;
+    background-color: var(--global-bck-color);
+    cursor: context-menu;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.close-btn {
+    position: absolute;
+    color: var(--boring-black);
+    background-color: var(--global-bck-color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--box-shadow8);
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    font-size: 13px;
 }

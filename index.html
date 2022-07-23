@@ -27,9 +27,9 @@
           </div>
           <nav class="menunav">
             <ul class="main-links">
-              <li><a href="/A">Agencja</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="/K">Kontakt</a></li>
+              <li><a class="link-head active" href="index.html">Agencja</a></li>
+              <li><a class="link-head" href="portfolio.html">Portfolio</a></li>
+              <li><a class="link-head" href="/K">Kontakt</a></li>
             </ul>
           </nav>
           <ul class="contact">
@@ -57,7 +57,9 @@
         <div class="header-foto">
           <div class="container">
             <h1 class="mh-text">Efektywne rozwiązania dla waszego biznesu</h1>
-            <button class="mh-button" type="button">Zamów usługę</button>
+            <button class="mh-button" type="button" data-modal-open>
+              Zamów usługę
+            </button>
           </div>
         </div>
       </section>
@@ -138,29 +140,32 @@
             <div class="container">
               <h2>Czym się zajmujemy</h2>
               <ul class="our-work">
-                <li>
+                <li class="work-label">
                   <img
                     src="images/b1.jpg"
                     alt="tworzenie aplikacji"
                     width="370"
                     height="294"
                   />
+                  <p class="label">Aplikacje komputerowe</p>
                 </li>
-                <li>
+                <li class="work-label">
                   <img
                     src="images/b2.jpg"
                     alt="UI design"
                     width="370"
                     height="294"
                   />
+                  <p class="label">Aplikacje mobilne</p>
                 </li>
-                <li>
+                <li class="work-label">
                   <img
                     src="images/b3.jpg"
                     alt="dbałość o szczegóły"
                     width="370"
                     height="294"
                   />
+                  <p class="label">Rozwiązania graficzne</p>
                 </li>
               </ul>
             </div>
@@ -376,15 +381,15 @@
             <a class="header-logo-word1" href="index.html">
               Web<span class="footer-logo-word2">Studio</span>
             </a>
-          <div class="contacts">
-            <address class="adtext">
-              m. Warszawa, Aleje Jerozolimskie 21
-            </address>
-            <a class="mail2" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-            <a class="phone2" href="tel:+48111111111">+48 111 111 111</a>
-          </div>
+            <div class="contacts">
+              <address class="adtext">
+                m. Warszawa, Aleje Jerozolimskie 21
+              </address>
+              <a class="mail2" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+              <a class="phone2" href="tel:+48111111111">+48 111 111 111</a>
+            </div>
           </li>
           <li>
             <p class="socials-bottom">Dołącz do nas</p>
@@ -409,9 +414,18 @@
                   <use href="images/sprite.svg#icon-linkedin"></use>
                 </svg>
               </li>
+            </ul>
           </li>
         </ul>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>X</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
