@@ -754,10 +754,12 @@ img {
     height: 40px;
     padding-left: 42px;
     outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-userdata:focus + svg {
     fill: var(--special);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-userdata:focus {
@@ -773,6 +775,7 @@ img {
     padding: 12px 16px;
     margin-bottom: 20px;
     outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-comment-area:focus {
