@@ -1,0 +1,55 @@
+.portfolio-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  list-style: none;
+}
+
+.portfolio-buttons__filter {
+  background-color: $portfolio_button;
+  color: $links-color;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 500;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    background-color: $corporate__color;
+    color: $global-background;
+    box-shadow: 0px 3px 1px $box-shadow8, 0px 1px 2px $box-shadow9,
+      0px 2px 2px $box-shadow3;
+  }
+}
+
+.button-one {
+  width: 121px;
+  height: 38px;
+}
+
+.button-two {
+  width: 93px;
+  height: 38px;
+}
+
+.button-three {
+  width: 114px;
+  height: 38px;
+}
+
+.button-four {
+  width: 91px;
+  height: 38px;
+}
+
+.button-five {
+  width: 121px;
+  height: 38px;
+}

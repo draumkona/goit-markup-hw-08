@@ -1,0 +1,28 @@
+.about-work__list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.about-work {
+  width: 1170px;
+  list-style: none;
+
+  &__label {
+    position: relative;
+  }
+
+  &__text {
+    position: absolute;
+    background-color: $about-work__background;
+    text-transform: uppercase;
+    color: $global-background;
+    bottom: 0;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    width: 370px;
+    padding: 27px 0;
+  }
+}

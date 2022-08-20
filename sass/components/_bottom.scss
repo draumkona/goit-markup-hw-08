@@ -1,0 +1,120 @@
+.bottom__logo-word2 {
+  color: $bottom__logo-word;
+}
+
+.bottom {
+  height: 252px;
+  background-color: $bottom__background;
+  padding-top: 60px;
+}
+
+.bottom__media {
+  list-style: none;
+  display: flex;
+  gap: 70px;
+}
+
+.bottom__items {
+  padding-top: 20px;
+}
+
+.bottom__address {
+  width: 246px;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.7;
+  color: $bottom__text;
+  font-style: normal;
+}
+
+.bottom__contacts {
+  width: 231px;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.7;
+  color: $bottom__media-color;
+  padding-top: 9px;
+  display: block;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: $corporate__color;
+  }
+}
+
+.bottom__header {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: $bottom__text;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.bottom__icon-list {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.bottom__icons {
+  display: block;
+  border-radius: 50%;
+  padding: 12px 12px 8px 12px;
+  background-color: $icons-background;
+  fill: $bottom__text;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bottom__newsletter {
+  font-size: 14;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: $bottom__text;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.bottom__email-window {
+  width: 358px;
+  border: 1px solid $bottom__border;
+  filter: drop-shadow(0px 4px 4px $main-header__box);
+  border-radius: 4px;
+  background-color: inherit;
+  padding: 15px;
+  color: $bottom__media-color;
+}
+
+.bottom__button {
+  background-color: $corporate__color;
+  color: $bottom__text;
+  box-shadow: 0px 4px 4px $main-header__box;
+  border-radius: 4px;
+  border-color: transparent;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  cursor: pointer;
+}
+
+.bottom__mail-form {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}

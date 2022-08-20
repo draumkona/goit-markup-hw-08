@@ -1,0 +1,171 @@
+.page-header {
+  border: solid 1px $page-header__border;
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid $page-header__border;
+  }
+}
+
+.page-header__logo {
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+
+.page-header__word1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  text-decoration: none;
+  letter-spacing: 0.035em;
+  color: $corporate__color;
+}
+
+.page-header__word2 {
+  color: $text-color;
+}
+
+.nav {
+  width: 254px;
+  margin-left: 92px;
+
+  &__list {
+    display: flex;
+    gap: 46px;
+    list-style: none;
+  }
+}
+
+.active::after {
+  content: "";
+  background: $corporate__color;
+  width: 53px;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 45px;
+  position: absolute;
+  border-radius: 2px;
+}
+
+.nav__link {
+  color: $links-color;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+
+  &:focus {
+    color: $corporate__color;
+  }
+  &:hover {
+    color: $corporate__color;
+  }
+}
+
+.page-header__contact {
+  color: $body__text-color;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.contact {
+  padding-left: 345px;
+  gap: 50px;
+  display: flex;
+  list-style: none;
+
+  &__icon {
+    stroke: currentColor;
+    fill: currentColor;
+    margin-right: 10px;
+  }
+}
+
+.contact__mail {
+  width: 135px;
+  height: 16px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    color: $corporate__color;
+  }
+
+  &:hover {
+    color: $corporate__color;
+  }
+}
+
+.contact__phone {
+  width: 110px;
+  height: 16px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    color: $corporate__color;
+  }
+
+  &:hover {
+    color: $corporate__color;
+  }
+}
+
+.main-header {
+  .container {
+    padding: 200px 252px 200px 252px;
+  }
+}
+.main-header {
+  background-color: $main-header__background;
+  text-align: center;
+
+  &__image {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0),
+        rgba(47, 48, 58, 0.1),
+        rgba(47, 48, 58, 0.2),
+        rgba(47, 48, 58, 0.3),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/team.jpg);
+    background-repeat: no-repeat;
+    background-size: 1600px;
+    background-position: center;
+  }
+
+  &__text {
+    color: $main-header__text;
+    text-transform: uppercase;
+    font-size: 44px;
+    letter-spacing: 0.06em;
+    line-height: 1.4;
+    max-width: 696px;
+    padding-bottom: 30px;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.button {
+  background-color: $corporate__color;
+  color: $main-header__text;
+  font-weight: 700;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px $main-header__box;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  line-height: 1.9;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+}

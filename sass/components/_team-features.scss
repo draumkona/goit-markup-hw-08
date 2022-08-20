@@ -1,0 +1,37 @@
+.team-features {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.team-features__item {
+  width: 270px;
+}
+
+.team-features__image {
+  width: 270px;
+  height: 120px;
+  background-color: $team-features__background;
+  padding: 25px 100px 25px 100px;
+}
+
+.team-features__text {
+  padding-top: 30px;
+  width: 270px;
+}
+
+.team-features__header {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: $links-color;
+}
+
+.team-features__description {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.7;
+  color: $body__text-color;
+  padding-top: 10px;
+}
