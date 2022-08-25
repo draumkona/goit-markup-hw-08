@@ -25,37 +25,52 @@
               Web<span class="page-header__word2">Studio</span>
             </a>
           </div>
-          <nav class="nav">
-            <ul class="nav__list">
-              <li><a class="nav__link active" href="index.html">Agencja</a></li>
-              <li><a class="nav__link" href="portfolio.html">Portfolio</a></li>
-              <li><a class="nav__link" href="/K">Kontakt</a></li>
+          <div class="nav-and-contacts">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li>
+                  <a class="nav__link active" href="index.html">Agencja</a>
+                </li>
+                <li>
+                  <a class="nav__link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li><a class="nav__link" href="/K">Kontakt</a></li>
+              </ul>
+            </nav>
+            <ul class="contact">
+              <li>
+                <a
+                  class="contact__mail page-header__contact"
+                  href="mailto:info@devstudio.com"
+                >
+                  <svg class="contact__icon" width="16" height="12">
+                    <use href="images/sprite.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li>
+                <a
+                  class="contact__phone page-header__contact"
+                  href="tel:+48111111111"
+                >
+                  <svg class="contact__icon" width="10" height="16">
+                    <use href="images/sprite.svg#icon-smartphone"></use>
+                  </svg>
+                  +48 111 111 111
+                </a>
+              </li>
             </ul>
-          </nav>
-          <ul class="contact">
-            <li>
-              <a
-                class="contact__mail page-header__contact"
-                href="mailto:info@devstudio.com"
-              >
-                <svg class="contact__icon" width="16" height="12">
-                  <use href="images/sprite.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li>
-              <a
-                class="contact__phone page-header__contact"
-                href="tel:+48111111111"
-              >
-                <svg class="contact__icon" width="10" height="16">
-                  <use href="images/sprite.svg#icon-smartphone"></use>
-                </svg>
-                +48 111 111 111
-              </a>
-            </li>
-          </ul>
+          </div>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="menu-icon" width="24" height="24">
+              <use href="./images/sprite.svg#icon-menu_24px"></use>
+            </svg>
+          </button>
         </div>
       </div>
 
@@ -72,9 +87,50 @@
         </div>
       </section>
     </header>
+    <section class="nav-mobile js-menu-container">
+      <button class="nav-mobile__close-btn js-close-menu">
+        <svg width="19" height="19">
+          <use href="./images/sprite.svg#icon-close_24px"></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="nav-mobile__list">
+          <li><a class="nav-mobile__link" href="index.html">Agencja</a></li>
+          <li>
+            <a class="nav-mobile__link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li><a class="nav-mobile__link" href="/K">Kontakt</a></li>
+        </ul>
+      </nav>
+      <ul class="nav-mobile__contacts">
+        <li>
+          <a class="nav-mobile__phone" href="tel:+48111111111"
+            >+48 111 111 111</a
+          >
+        </li>
+        <li>
+          <a class="nav-mobile__mail" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="nav-mobile__socials">
+        <li>
+          <a class="nav-mobile__socials-link link--border" href="/"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a class="nav-mobile__socials-link link--border" href="/">Twitter</a>
+        </li>
+        <li>
+          <a class="nav-mobile__socials-link link--border" href="/">Facebook</a>
+        </li>
+        <li><a class="nav-mobile__socials-link" href="/">LinkedIn</a></li>
+      </ul>
+    </section>
 
     <main>
-      <!--Nasze Atuty-->
       <section class="section">
         <div class="container">
           <ul class="team-features">
@@ -87,9 +143,8 @@
               <div class="team-features__text">
                 <h3 class="team-features__header">Lorem ipsum</h3>
                 <p class="team-features__description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                  dolorem repellat nostrum temporibus cumque officia quasi
-                  architecto ea magnam?
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
                 </p>
               </div>
             </li>
@@ -102,9 +157,8 @@
               <div class="team-features__text">
                 <h3 class="team-features__header">Lorem ipsum</h3>
                 <p class="team-features__description">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id
-                  aliquid quo odio itaque voluptatem corporis consequatur
-                  deserunt, ut accusamus.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
                 </p>
               </div>
             </li>
@@ -117,9 +171,8 @@
               <div class="team-features__text">
                 <h3 class="team-features__header">Lorem ipsum</h3>
                 <p class="team-features__description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                  ut facilis labore, provident quo aliquid et repudiandae odio
-                  architecto?
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
                 </p>
               </div>
             </li>
@@ -132,9 +185,8 @@
               <div class="team-features__text">
                 <h3 class="team-features__header">Lorem ipsum</h3>
                 <p class="team-features__description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                  ut facilis labore, provident quo aliquid et repudiandae odio
-                  architecto?
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
                 </p>
               </div>
             </li>
@@ -377,8 +429,8 @@
     <footer class="bottom">
       <div class="container">
         <ul class="bottom__media">
-          <li>
-            <a class="page-header__word1" href="index.html">
+          <li class="bottom__media-info">
+            <a class="page-header__word1 logo--center" href="index.html">
               Web<span class="bottom__logo-word2">Studio</span>
             </a>
             <div class="bottom__items">
@@ -446,7 +498,7 @@
         </ul>
       </div>
     </footer>
-
+    <!--
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__close-button" data-modal-close>
@@ -521,7 +573,8 @@
         </form>
       </div>
     </div>
-
+    -->
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

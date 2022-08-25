@@ -1,23 +1,20 @@
 .page-header {
-  border: solid 1px $page-header__border;
-
   &__menu {
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-bottom: 1px solid $page-header__border;
   }
 }
 
 .page-header__logo {
-  margin-top: 24px;
-  margin-bottom: 25px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-left: 15px;
 }
 
 .page-header__word1 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   text-decoration: none;
   letter-spacing: 0.035em;
   color: $corporate__color;
@@ -38,7 +35,7 @@
   }
 }
 
-.active::after {
+/* .active::after {
   content: "";
   background: $corporate__color;
   width: 53px;
@@ -49,7 +46,7 @@
   top: 45px;
   position: absolute;
   border-radius: 2px;
-}
+} */
 
 .nav__link {
   color: $links-color;
@@ -119,7 +116,7 @@
 
 .main-header {
   .container {
-    padding: 200px 252px 200px 252px;
+    padding: 118px 58px 198px 57px;
   }
 }
 .main-header {
@@ -138,16 +135,16 @@
       url(../images/team.jpg);
     background-repeat: no-repeat;
     background-size: 1600px;
-    background-position: center;
+    background-position: center top;
   }
 
   &__text {
     color: $main-header__text;
     text-transform: uppercase;
-    font-size: 44px;
+    font-size: 26px;
     letter-spacing: 0.06em;
-    line-height: 1.4;
-    max-width: 696px;
+    line-height: 1.61;
+    max-width: 365px;
     padding-bottom: 30px;
     text-align: center;
     margin: 0;

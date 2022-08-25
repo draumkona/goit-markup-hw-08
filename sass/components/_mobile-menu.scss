@@ -1,0 +1,132 @@
+.menu-toggle {
+  border: none;
+  cursor: pointer;
+  background-color: $global-background;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+}
+
+.nav-mobile {
+  background-color: $global-background;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 0.3s ease-in-out;
+}
+
+.is-open {
+  left: 0;
+}
+
+.nav-mobile__close-btn {
+  border: none;
+  background-color: transparent;
+  fill: $links-color;
+  position: absolute;
+  margin-top: 21px;
+  right: 26px;
+
+  &:hover {
+    fill: $corporate__color;
+  }
+
+  &:focus {
+    fill: $corporate__color;
+  }
+}
+
+.nav-mobile__list {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+  flex-direction: column;
+  margin-top: 48px;
+  padding-left: 20px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.nav-mobile__link {
+  color: $links-color;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    color: $corporate__color;
+  }
+
+  &:hover {
+    color: $corporate__color;
+  }
+}
+
+.menu-icon {
+  width: 24;
+  height: 24;
+  fill: $text-color;
+
+  &:hover {
+    fill: $corporate__color;
+  }
+
+  &:focus {
+    fill: $corporate__color;
+  }
+}
+
+.nav-mobile__contacts {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  flex-direction: column;
+  padding-left: 20px;
+  margin-bottom: 64px;
+  margin-top: 60px;
+}
+
+.nav-mobile__phone {
+  color: $corporate__color;
+  text-decoration: none;
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.nav-mobile__mail {
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  color: $body__text-color;
+  text-decoration: none;
+}
+
+.nav-mobile__socials {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 320px;
+}
+
+.nav-mobile__socials-link {
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  line-height: 1.22;
+  color: $corporate__color;
+  font-weight: 500;
+}
+
+.link--border {
+  border-right: 1px solid $modal__border;
+  padding-right: 20px;
+}
