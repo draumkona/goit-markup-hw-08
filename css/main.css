@@ -48,54 +48,6 @@ img {
   display: block;
 }
 
-/* background image - header */
-/* mobile */
-@media screen and (max-width: 768px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .main-header__image {
-    background-image: url(../images/header-mobile-x2.jpg);
-  }
-}
-/* tablet 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .main-header__image {
-    background-image: url(../images/header-tablet-x2.jpg);
-  }
-}
-*/
-/* desktop
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .main-header__image {
-    background-image: url(../images/header-desktop-x2.jpg);
-  }
-}
-*/
-@media screen and (min-width: 480px) {
-  .our-team__card {
-    width: 450px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .nav-and-contacts {
-    display: none;
-  }
-  .about-work {
-    display: none;
-  }
-  .active {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .menu-icon {
-    display: none;
-  }
-}
 .page-header__menu {
   display: flex;
   align-items: center;
@@ -233,6 +185,32 @@ img {
   margin: 0;
 }
 
+/* header image */
+@media screen and (min-width: 1200px) {
+  .main-header__image {
+    background-image: url(../images/header-desktop-x1.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .main-header__image {
+    background-image: url(../images/header-desktop-x2.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .main-header__image {
+    background-image: url(../images/header-tablet-x2.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main-header__image {
+    background-image: url(../images/header-tablet-x1.jpg);
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .main-header__image {
+    background-image: url(../images/header-mobile-x2.jpg);
+  }
+}
 .button {
   background-color: #2196f3;
   color: #fff;
@@ -415,7 +393,7 @@ img {
   height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  top: 20px;
+  top: 8px;
   right: 8px;
   cursor: pointer;
   font-size: 13px;
@@ -878,7 +856,7 @@ img {
   height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  top: 20px;
+  top: 8px;
   right: 8px;
   cursor: pointer;
   font-size: 13px;
@@ -1017,7 +995,8 @@ img {
   flex-wrap: wrap;
   min-width: 200px;
   list-style: none;
-  margin: 0 15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .portfolio-buttons__filter {
@@ -1115,10 +1094,11 @@ img {
 }
 .portfolio__card-overlay p {
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 0.03em;
   line-height: 1.6;
-  padding: 49px 45px 49px 24px;
+  padding: 60px 20px;
+  margin-top: 40px;
 }
 
 .portfolio__card {
@@ -1126,7 +1106,7 @@ img {
   overflow: hidden;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   min-width: 320px;
-  max-width: 450px;
+  min-height: 209px;
 }
 .portfolio__card:hover .portfolio__card-overlay {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1135,4 +1115,75 @@ img {
 .portfolio__card figcaption {
   position: relative;
   background-color: #fff;
+}
+
+.portfolio__card-image {
+  width: 320px;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-and-contacts {
+    display: none;
+  }
+  .about-work {
+    display: none;
+  }
+  .active {
+    display: none;
+  }
+  .modal-agreement {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+}
+/* mobile 480 only */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    min-width: 480px;
+  }
+  .modal {
+    min-height: 609px;
+  }
+  .modal__form {
+    min-width: 450px;
+  }
+  .modal__userdata {
+    min-width: 370px;
+  }
+  .modal__comment-area {
+    min-width: 370px;
+    margin-bottom: 20px;
+  }
+  .modal__agreement {
+    margin-bottom: 30px;
+    flex-direction: row;
+  }
+  .our-team__card-img {
+    min-width: 450px;
+  }
+  .clients__list {
+    max-height: 399px;
+    flex-wrap: wrap;
+  }
+  .portfolio-buttons {
+    min-width: 392px;
+    margin-right: 73px;
+  }
+  .portfolio__card-image {
+    min-width: 450px;
+  }
+  .portfolio__card-overlay p {
+    padding: 77px 24px;
+    font-size: 18px;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about-work {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
