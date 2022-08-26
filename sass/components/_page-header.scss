@@ -39,7 +39,7 @@
   }
 }
 
-/* .active::after {
+.active::after {
   content: "";
   background: $corporate__color;
   width: 53px;
@@ -50,7 +50,7 @@
   top: 45px;
   position: absolute;
   border-radius: 2px;
-} */
+}
 
 .nav__link {
   color: $links-color;
@@ -136,10 +136,10 @@
         rgba(47, 48, 58, 0.3),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/team.jpg);
+      url(../images/header-mobile-x1.jpg);
     background-repeat: no-repeat;
-    background-size: 1600px;
-    background-position: center top;
+    background-size: cover;
+    background-position: center center;
   }
 
   &__text {

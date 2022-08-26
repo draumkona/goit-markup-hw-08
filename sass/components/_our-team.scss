@@ -10,12 +10,18 @@
   flex-direction: column;
 }
 
+.our-team__list li {
+  display: flex;
+  justify-content: center;
+}
+
 .our-team__card {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px $our-team__shadow1, 0px 1px 1px $our-team__shadow2,
     0px 2px 1px $our-team__shadow3;
   background-color: $global-background;
   margin: 0;
+  justify-content: center;
 }
 
 .our-team__header {
@@ -49,4 +55,8 @@
   fill: $icons-color;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-team__card-img {
+  width: 320px;
 }

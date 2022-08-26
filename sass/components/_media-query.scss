@@ -1,0 +1,56 @@
+/* background image - header */
+/* mobile */
+@media screen and (max-width: 768px) and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main-header__image {
+    background-image: url(../images/header-mobile-x2.jpg);
+  }
+}
+/* tablet 
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main-header__image {
+    background-image: url(../images/header-tablet-x2.jpg);
+  }
+}
+*/
+/* desktop
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main-header__image {
+    background-image: url(../images/header-desktop-x2.jpg);
+  }
+}
+*/
+
+@media screen and (min-width: 480px) {
+  .our-team__card {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-and-contacts {
+    display: none;
+  }
+
+  .about-work {
+    display: none;
+  }
+
+  .active {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+}
