@@ -5,6 +5,10 @@
   }
 }
 
+.header--border {
+  border: 1px solid $page-header__border;
+}
+
 .page-header__logo {
   margin-top: 16px;
   margin-bottom: 16px;

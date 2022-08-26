@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header header--border">
       <div class="container">
         <div class="page-header__menu">
           <div class="page-header__logo">
@@ -25,40 +25,98 @@
               Web<span class="page-header__word2">Studio</span>
             </a>
           </div>
-          <nav class="nav">
-            <ul class="nav__list">
-              <li><a class="nav__link active" href="index.html">Agencja</a></li>
-              <li><a class="nav__link" href="portfolio.html">Portfolio</a></li>
-              <li><a class="nav__link" href="/K">Kontakt</a></li>
+          <div class="nav-and-contacts">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li>
+                  <a class="nav__link active" href="index.html">Agencja</a>
+                </li>
+                <li>
+                  <a class="nav__link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li><a class="nav__link" href="/K">Kontakt</a></li>
+              </ul>
+            </nav>
+            <ul class="contact">
+              <li>
+                <a
+                  class="contact__mail page-header__contact"
+                  href="mailto:info@devstudio.com"
+                >
+                  <svg class="contact__icon" width="16" height="12">
+                    <use href="images/sprite.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li>
+                <a
+                  class="contact__phone page-header__contact"
+                  href="tel:+48111111111"
+                >
+                  <svg class="contact__icon" width="10" height="16">
+                    <use href="images/sprite.svg#icon-smartphone"></use>
+                  </svg>
+                  +48 111 111 111
+                </a>
+              </li>
             </ul>
-          </nav>
-          <ul class="contact">
-            <li>
-              <a
-                class="contact__mail page-header__contact"
-                href="mailto:info@devstudio.com"
-              >
-                <svg class="contact__icon" width="16" height="12">
-                  <use href="images/sprite.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li>
-              <a
-                class="contact__phone page-header__contact"
-                href="tel:+48111111111"
-              >
-                <svg class="contact__icon" width="10" height="16">
-                  <use href="images/sprite.svg#icon-smartphone"></use>
-                </svg>
-                +48 111 111 111
-              </a>
-            </li>
-          </ul>
+          </div>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="menu-icon" width="24" height="24">
+              <use href="./images/sprite.svg#icon-menu_24px"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
+
+    <section class="nav-mobile js-menu-container">
+      <button class="nav-mobile__close-btn js-close-menu">
+        <svg width="19" height="19">
+          <use href="./images/sprite.svg#icon-close_24px"></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="nav-mobile__list">
+          <li><a class="nav-mobile__link" href="index.html">Agencja</a></li>
+          <li>
+            <a class="nav-mobile__link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li><a class="nav-mobile__link" href="/K">Kontakt</a></li>
+        </ul>
+      </nav>
+      <ul class="nav-mobile__contacts">
+        <li>
+          <a class="nav-mobile__phone" href="tel:+48111111111"
+            >+48 111 111 111</a
+          >
+        </li>
+        <li>
+          <a class="nav-mobile__mail" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="nav-mobile__socials">
+        <li>
+          <a class="nav-mobile__socials-link link--border" href="/"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a class="nav-mobile__socials-link link--border" href="/">Twitter</a>
+        </li>
+        <li>
+          <a class="nav-mobile__socials-link link--border" href="/">Facebook</a>
+        </li>
+        <li><a class="nav-mobile__socials-link" href="/">LinkedIn</a></li>
+      </ul>
+    </section>
 
     <main>
       <section class="section">
@@ -104,8 +162,7 @@
                 <img
                   src="images/technocrack.jpg"
                   alt="podgląd strony internetowej"
-                  width="370"
-                  height="294"
+                  min-width="320"
                 />
                 <div class="portfolio__card-overlay">
                   <p>
@@ -126,8 +183,7 @@
                 <img
                   src="images/neworlean.jpg"
                   alt="koszykarze"
-                  width="370"
-                  height="294"
+                  min-width="320"
                 />
                 <div class="portfolio__card-overlay">
                   <p>
@@ -150,8 +206,7 @@
                 <img
                   src="images/seafood.jpg"
                   alt="restauracja"
-                  width="370"
-                  height="294"
+                  min-width="320"
                 />
                 <div class="portfolio__card-overlay">
                   <p>
@@ -169,12 +224,7 @@
             </li>
             <li>
               <figure class="portfolio__card">
-                <img
-                  src="images/prime.jpg"
-                  alt="słuchawki"
-                  width="370"
-                  height="294"
-                />
+                <img src="images/prime.jpg" alt="słuchawki" min-width="320" />
                 <div class="portfolio__card-overlay">
                   <p>
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -191,12 +241,7 @@
             </li>
             <li>
               <figure class="portfolio__card">
-                <img
-                  src="images/boxes.jpg"
-                  alt="pudełka"
-                  width="370"
-                  height="294"
-                />
+                <img src="images/boxes.jpg" alt="pudełka" min-width="320" />
                 <div class="portfolio__card-overlay">
                   <p>
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -213,12 +258,7 @@
             </li>
             <li>
               <figure class="portfolio__card">
-                <img
-                  src="images/noborders.jpg"
-                  alt="monitor"
-                  width="370"
-                  height="294"
-                />
+                <img src="images/noborders.jpg" alt="monitor" min-width="320" />
                 <div class="portfolio__card-overlay">
                   <p>
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -240,8 +280,7 @@
                 <img
                   src="images/magazynlimited.jpg"
                   alt="czasopismo"
-                  width="370"
-                  height="294"
+                  min-width="320"
                 />
                 <div class="portfolio__card-overlay">
                   <p>
@@ -261,12 +300,7 @@
             </li>
             <li>
               <figure class="portfolio__card">
-                <img
-                  src="images/lab.jpg"
-                  alt="zawieszka"
-                  width="370"
-                  height="294"
-                />
+                <img src="images/lab.jpg" alt="zawieszka" min-width="320" />
                 <div class="portfolio__card-overlay">
                   <p>
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -286,8 +320,7 @@
                 <img
                   src="images/business.jpg"
                   alt="laptop z aplikacją"
-                  width="370"
-                  height="294"
+                  min-width="320"
                 />
                 <div class="portfolio__card-overlay">
                   <p>
@@ -311,8 +344,8 @@
     <footer class="bottom">
       <div class="container">
         <ul class="bottom__media">
-          <li>
-            <a class="page-header__word1" href="index.html">
+          <li class="bottom__media-info">
+            <a class="page-header__word1 logo--center" href="index.html">
               Web<span class="bottom__logo-word2">Studio</span>
             </a>
             <div class="bottom__items">
@@ -380,5 +413,7 @@
         </ul>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
