@@ -39,6 +39,14 @@
   right: 8px;
   cursor: pointer;
   font-size: 13px;
+
+  &:focus {
+    color: $corporate__color;
+  }
+
+  &:hover {
+    color: $corporate__color;
+  }
 }
 
 .modal__text {
