@@ -65,6 +65,23 @@
   }
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main-header__image {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0),
+        rgba(47, 48, 58, 0.1),
+        rgba(47, 48, 58, 0.2),
+        rgba(47, 48, 58, 0.3),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/header-mobile-x2.jpg);
+  }
+}
+
 /* mobile 480 only */
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
@@ -280,6 +297,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/header-desktop-x1.jpg);
+    background-size: 1700px;
   }
 
   .nav-and-contacts {
