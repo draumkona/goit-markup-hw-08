@@ -122,10 +122,40 @@
   }
 }
 
+/* mobile @2 po odkomentowaniu @2 zawsze bierze desktop, nie ważne jaka jest rozdzielczość
+@media screen and (min-width: 480px) and (max-width: 767px) and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main-header__image {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0),
+        rgba(47, 48, 58, 0.1),
+        rgba(47, 48, 58, 0.2),
+        rgba(47, 48, 58, 0.3),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/header-mobile-x2.jpg);
+  }
+}
+*/
 /* tablet only */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     min-width: 768px;
+  }
+
+  .main-header__image {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0),
+        rgba(47, 48, 58, 0.1),
+        rgba(47, 48, 58, 0.2),
+        rgba(47, 48, 58, 0.3),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/header-tablet-x1.jpg);
   }
 
   .about-work {
@@ -211,6 +241,24 @@
   }
 }
 
+/* tablet @2 
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main-header__image {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0),
+        rgba(47, 48, 58, 0.1),
+        rgba(47, 48, 58, 0.2),
+        rgba(47, 48, 58, 0.3),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/header-tablet-x2.jpg);
+  }
+}
+*/
 /* desktop only */
 @media screen and (min-width: 1200px) {
   .container {
@@ -220,6 +268,18 @@
   .section {
     padding-top: 90px;
     padding-bottom: 90px;
+  }
+
+  .main-header__image {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0),
+        rgba(47, 48, 58, 0.1),
+        rgba(47, 48, 58, 0.2),
+        rgba(47, 48, 58, 0.3),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/header-desktop-x1.jpg);
   }
 
   .nav-and-contacts {
@@ -320,3 +380,23 @@
     margin-top: 0;
   }
 }
+
+/* desktop @2 
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main-header__image {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0),
+        rgba(47, 48, 58, 0.1),
+        rgba(47, 48, 58, 0.2),
+        rgba(47, 48, 58, 0.3),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/header-desktop-x2.jpg);
+  }
+}
+*/

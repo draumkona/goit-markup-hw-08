@@ -127,21 +127,6 @@
   background-color: $main-header__background;
   text-align: center;
 
-  &__image {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(47, 48, 58, 0),
-        rgba(47, 48, 58, 0.1),
-        rgba(47, 48, 58, 0.2),
-        rgba(47, 48, 58, 0.3),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/header-mobile-x1.jpg);
-    background-repeat: no-repeat;
-    background-size: 1600px 650px;
-    background-position: center center;
-  }
-
   &__text {
     color: $main-header__text;
     text-transform: uppercase;
@@ -171,81 +156,17 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .main-header__image {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(47, 48, 58, 0),
-        rgba(47, 48, 58, 0.1),
-        rgba(47, 48, 58, 0.2),
-        rgba(47, 48, 58, 0.3),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/header-mobile-x2.jpg);
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .main-header__image {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(47, 48, 58, 0),
-        rgba(47, 48, 58, 0.1),
-        rgba(47, 48, 58, 0.2),
-        rgba(47, 48, 58, 0.3),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/header-tablet-x1.jpg);
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .main-header__image {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(47, 48, 58, 0),
-        rgba(47, 48, 58, 0.1),
-        rgba(47, 48, 58, 0.2),
-        rgba(47, 48, 58, 0.3),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/header-tablet-x2.jpg);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .main-header__image {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(47, 48, 58, 0),
-        rgba(47, 48, 58, 0.1),
-        rgba(47, 48, 58, 0.2),
-        rgba(47, 48, 58, 0.3),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/header-desktop-x1.jpg);
-  }
-}
-
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .main-header__image {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(47, 48, 58, 0),
-        rgba(47, 48, 58, 0.1),
-        rgba(47, 48, 58, 0.2),
-        rgba(47, 48, 58, 0.3),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/header-desktop-x2.jpg);
-  }
+.main-header__image {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0),
+      rgba(47, 48, 58, 0.1),
+      rgba(47, 48, 58, 0.2),
+      rgba(47, 48, 58, 0.3),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/header-mobile-x1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
